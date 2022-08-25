@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "1cef2b63c691fc0e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3883a0867d23ed69",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "访问网站.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "092f06ede10b2dd3",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd884de6918c180d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02785bfd93519032",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "485341f405e69b31",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e60aa10c67c48370",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "02dfd213b4a6e5ba",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 130
+  },
+  "right": {
+    "id": "722aa05b13522dc0",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cd382c4af53e6d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "39fb7e7f803c1219",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "访问网站.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f6402b8c230844a8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2cba5ff415138474",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "访问网站.md"
+              }
+            }
+          },
+          {
+            "id": "5de1dcf3a22a5489",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "访问网站.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eaf10b8f3c2bc8c8",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 100
+  },
+  "active": "3883a0867d23ed69",
+  "lastOpenFiles": [
+    "三次握手.md",
+    "前端&后端&架构.md",
+    "Attachment/Pasted image 20220824224939.png",
+    "Attachment/Pasted image 20220824224832.png",
+    "Attachment/Pasted image 20220824222649.png",
+    "Attachment/Pasted image 20220824185808.png",
+    "Attachment/Pasted image 20220824185627.png",
+    "Attachment/Baidu.png",
+    "Attachment/屏幕截图 2022-08-24 205023.png",
+    "访问网站.md"
+  ]
+}
