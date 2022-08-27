@@ -145,17 +145,17 @@
     "direction": "horizontal",
     "width": 100
   },
-  "active": "02785bfd93519032",
+  "active": "3883a0867d23ed69",
   "lastOpenFiles": [
     "前端&后端&架构.md",
-    "访问网站.md",
-    "三次握手.md",
-    "Attachment/Pasted image 20220824224939.png",
-    "Attachment/Pasted image 20220824224832.png",
-    "Attachment/Pasted image 20220824222649.png",
-    "Attachment/Pasted image 20220824185808.png",
-    "Attachment/Pasted image 20220824185627.png",
-    "Attachment/Baidu.png",
-    "Attachment/屏幕截图 2022-08-24 205023.png"
+    "Broswer.md",
+    "Client.md",
+    "Domain Name.md",
+    "HTML基础.md",
+    "IP Address.md",
+    "README.md",
+    "Server.md",
+    "TCP.md",
+    "URL&URI.md"
   ]
 }
