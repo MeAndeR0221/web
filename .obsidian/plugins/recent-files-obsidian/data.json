@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "TCP",
+      "path": "TCP.md"
+    },
+    {
       "basename": "UDP",
       "path": "UDP.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "图一楽",
       "path": "图一楽.md"
-    },
-    {
-      "basename": "TCP",
-      "path": "TCP.md"
     },
     {
       "basename": "Server",
