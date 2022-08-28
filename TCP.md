@@ -1,4 +1,4 @@
-__`TCP（Transmission Control Protocol）`__
+# __`TCP（Transmission Control Protocol）`__
 传输控制协议（TCP，Transmission Control Protocol）是一种面向连接的、可靠的、基于字节流的端到端传输层通信协议，由IETF的RFC 793定义。
 TCP旨在适应支持多网络应用的分层协议层次结构。互联网络与单个网络有很大的不同，因为互联网络的不同部分可能有截然不同的拓扑结构、带宽、延迟、数据包大小和其他参数。TCP的设计目标是能够动态地适应互联网络的这些特性，而且具备面对各种故障时的健壮性。
 开放系统互联（Open System Interconnection）：
