@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "URL&URI.md",
+            "file": "UDP.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#fragment",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "URL&URI.md",
+                "file": "UDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "URL&URI.md"
+                "file": "UDP.md"
               }
             }
           },
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "URL&URI.md",
+                "file": "UDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,6 +147,7 @@
   },
   "active": "3883a0867d23ed69",
   "lastOpenFiles": [
+    "URL&URI.md",
     "图一楽.md",
     "UDP.md",
     "TCP.md",
@@ -156,7 +156,6 @@
     "前端&后端&架构.md",
     "Broswer.md",
     "Client.md",
-    "Domain Name.md",
-    "HTML基础.md"
+    "Domain Name.md"
   ]
 }
