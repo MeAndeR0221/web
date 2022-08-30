@@ -7,7 +7,9 @@
 -   [WWW](https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91 "万维网")[^1]用户端使用[ARP](https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE "地址解析协议")，[IP](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE "网际协议")，[ICMP](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE "互联网控制消息协议")，[UDP](https://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE "用户数据报协议")，[TCP](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE "传输控制协议")，[DNS](https://zh.wikipedia.org/wiki/DNS "DNS")，[HTTP](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "超文本传输协议")，[FTP](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "文件传输协议")。
 -   一台用户电脑上还会运行如[TELNET](https://zh.wikipedia.org/wiki/TELNET "TELNET")，[SMTP](https://zh.wikipedia.org/wiki/%E7%AE%80%E5%8D%95%E9%82%AE%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "简单邮件传输协议")
 
-TCP/IP提供了点对点链接的机制，将资料应该如何封装、寻址、传输、路由以及在目的地如何接收，都加以标准化。它将软件通信过程[抽象化](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%8C%96_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8) "抽象化 (计算机科学)")为四个[抽象层](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%B1%A4 "抽象层")，采取[协议堆栈](https://zh.wikipedia.org/w/index.php?title=%E5%8D%94%E5%AE%9A%E5%A0%86%E7%96%8A&action=edit&redlink=1 "协议堆栈（页面不存在）")的方式，分别实现出不同通信协议。协议族下的各种协议，依其功能不同，分别归属到这四个层次结构之中，常视为是简化的七层[OSI模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B "OSI模型")。 ^599153
+TCP/IP提供了点对点链接的机制，将资料应该如何封装、寻址、传输、路由以及在目的地如何接收，都加以标准化。它将软件通信过程[抽象化](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%8C%96_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8) "抽象化 (计算机科学)")为四个[抽象层](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%B1%A4 "抽象层")，采取[协议堆栈](https://zh.wikipedia.org/w/index.php?title=%E5%8D%94%E5%AE%9A%E5%A0%86%E7%96%8A&action=edit&redlink=1 "协议堆栈（页面不存在）")的方式，分别实现出不同通信协议。TCP/IP协议栈起始于第三层协议IP（[网际协议](https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E5%8D%94%E8%AD%B0 "网际协议")）。协议族下的各种协议，依其功能不同，分别归属到这四个层次结构之中，常视为是简化的七层[OSI模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B "OSI模型")。 ^c6f43a
+
+所有的TCP/IP应用都必须实现**IP和[ICMP](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE "互联网控制消息协议")**。对于一个[路由器](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E5%99%A8 "路由器")（router）而言，有这两个协议就可以运作，虽然从应用的角度来看，这样一个[路由器](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E5%99%A8 "路由器")意义不大。实际的路由器一般还需要运行许多“推荐”使用的协议，以及一些其他的协议。 几乎所有连接到互联网上的电脑上都存在的IPv4协议出生在1981年，今天的版本和最早的版本并没有多少改变。升级版IPv6的工作始于1995年，目的在于取代IPv4。ICMP协议主要用于收集有关网络的信息查找错误等工作。
 
 [^1]:万维网并不等同互联网，万维网只是互联网所能提供的服务其中之一，是靠着互联网运行的一项服务。
 ***
@@ -17,7 +19,7 @@ TCP/IP提供了点对点链接的机制，将资料应该如何封装、寻址�
 TCP旨在适应支持多网络应用的分层协议层次结构。互联网络与单个网络有很大的不同，因为互联网络的不同部分可能有截然不同的拓扑结构、带宽、延迟、数据包大小和其他参数。TCP的设计目标是能够动态地适应互联网络的这些特性，而且具备面对各种故障时的健壮性。
 开放系统互联（Open System Interconnection）：
 ![[Pasted image 20220827225111.png]]
-TCP工作在网络[[#^599153|OSI]]的七层模型中的第四层——传输层，IP在第三层——网络层，ARP 在第二层——数据链路层；同时，我们需要简单的知道，数据从应用层发下来，会在每一层都会加上头部信息，进行封装，然后再发送到数据接收端。这个基本的流程你需要知道，就是每个数据都会经过数据的封装和解封装的过程。
+TCP工作在网络[[#^c6f43a|OSI]]的七层模型中的第四层——传输层，IP在第三层——网络层，ARP 在第二层——数据链路层；同时，我们需要简单的知道，数据从应用层发下来，会在每一层都会加上头部信息，进行封装，然后再发送到数据接收端。这个基本的流程你需要知道，就是每个数据都会经过数据的封装和解封装的过程。
 ![[Pasted image 20220827230424.png]]
 tcp协议比较复杂，因为它要实现可靠传输，为了确保它的可靠传输，于是协议就相当复杂了。它的主要特点是：
 -   面向连接，就像打电话一样，必须一对一的接通电话，两个人才能讲电话，而udp有点像发微信，不需要对方做准备，我想发就发
