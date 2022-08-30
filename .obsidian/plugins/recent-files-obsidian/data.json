@@ -5,10 +5,6 @@
       "path": "TCP_IP.md"
     },
     {
-      "basename": "UDP",
-      "path": "UDP.md"
-    },
-    {
       "basename": "URL&URI",
       "path": "URL&URI.md"
     },
