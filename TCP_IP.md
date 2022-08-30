@@ -9,7 +9,59 @@
 
 TCP/IP提供了点对点链接的机制，将资料应该如何封装、寻址、传输、路由以及在目的地如何接收，都加以标准化。它将软件通信过程[抽象化](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%8C%96_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8) "抽象化 (计算机科学)")为四个[抽象层](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%B1%A4 "抽象层")，采取[协议堆栈](https://zh.wikipedia.org/w/index.php?title=%E5%8D%94%E5%AE%9A%E5%A0%86%E7%96%8A&action=edit&redlink=1 "协议堆栈（页面不存在）")的方式，分别实现出不同通信协议。TCP/IP协议栈起始于第三层协议IP（[网际协议](https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E5%8D%94%E8%AD%B0 "网际协议")）。协议族下的各种协议，依其功能不同，分别归属到这四个层次结构之中，常视为是简化的七层[OSI模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B "OSI模型")。 ^c6f43a
 
-所有的TCP/IP应用都必须实现**IP和[ICMP](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE "互联网控制消息协议")**。对于一个[路由器](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E5%99%A8 "路由器")（router）而言，有这两个协议就可以运作，虽然从应用的角度来看，这样一个[路由器](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E5%99%A8 "路由器")意义不大。实际的路由器一般还需要运行许多“推荐”使用的协议，以及一些其他的协议。 几乎所有连接到互联网上的电脑上都存在的IPv4协议出生在1981年，今天的版本和最早的版本并没有多少改变。升级版IPv6的工作始于1995年，目的在于取代IPv4。ICMP协议主要用于收集有关网络的信息查找错误等工作。
+所有的TCP/IP应用都必须实现**IP和[ICMP](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE "互联网控制消息协议")**。对于一个[路由器](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E5%99%A8 "路由器")（router）而言，有这两个协议就可以运作，实际的路由器一般还需要运行许多“推荐”使用的协议，以及一些其他的协议。 
+
+几乎所有连接到互联网上的电脑上都存在的IPv4协议出生在1981年，今天的版本和最早的版本并没有多少改变。升级版IPv6的工作始于1995年，目的在于取代IPv4。ICMP协议主要用于收集有关网络的信息查找错误等工作。
+
+下面试图显示不同的TCP/IP和其他的协议在最初[OSI模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B "OSI模型")中的位置：
+
+7. **应用层**(application layer)
+例如[HTTP](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "超文本传输协议")、[SMTP](https://zh.wikipedia.org/wiki/%E7%AE%80%E5%8D%95%E9%82%AE%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "简单邮件传输协议")、[SNMP](https://zh.wikipedia.org/wiki/%E7%AE%80%E5%8D%95%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E5%8D%8F%E8%AE%AE "简单网络管理协议")、[FTP](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "文件传输协议")、[Telnet](https://zh.wikipedia.org/wiki/Telnet "Telnet")、[SIP](https://zh.wikipedia.org/wiki/%E4%BC%9A%E8%AF%9D%E5%8F%91%E8%B5%B7%E5%8D%8F%E8%AE%AE "会话发起协议")、[SSH](https://zh.wikipedia.org/wiki/Secure_Shell "Secure Shell")、[NFS](https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F "网络文件系统")、[RTSP](https://zh.wikipedia.org/wiki/RTSP "RTSP")、[XMPP](https://zh.wikipedia.org/wiki/XMPP "XMPP")、[Whois](https://zh.wikipedia.org/wiki/WHOIS "WHOIS")、[ENRP](https://zh.wikipedia.org/w/index.php?title=ENRP&action=edit&redlink=1)、[TLS](https://zh.wikipedia.org/wiki/%E5%82%B3%E8%BC%B8%E5%B1%A4%E5%AE%89%E5%85%A8%E6%80%A7%E5%8D%94%E5%AE%9A "传输层安全性协议")
+6. **表示层** (presentation layer)
+例如[XDR](https://zh.wikipedia.org/wiki/%E5%A4%96%E9%83%A8%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA%E6%B3%95 "外部数据表示法")、[ASN.1](https://zh.wikipedia.org/wiki/ASN.1 "ASN.1")、[NCP](https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE "网络控制协议")、[TLS](https://zh.wikipedia.org/wiki/TLS "TLS")、[ASCII](https://zh.wikipedia.org/wiki/ASCII "ASCII")
+5. **会话层** (session layer)
+例如[ASAP](https://zh.wikipedia.org/w/index.php?title=ASAP&action=edit&redlink=1)、ISO 8327 / CCITT X.225、[RPC](https://zh.wikipedia.org/wiki/%E9%81%A0%E7%A8%8B%E9%81%8E%E7%A8%8B%E8%AA%BF%E7%94%A8 "远程过程调用")、[NetBIOS](https://zh.wikipedia.org/wiki/NetBIOS "NetBIOS")、[Winsock](https://zh.wikipedia.org/wiki/Winsock "Winsock")、[BSD sockets](https://zh.wikipedia.org/wiki/Berkeley%E5%A5%97%E6%8E%A5%E5%AD%97 "Berkeley套接字")、[SOCKS](https://zh.wikipedia.org/wiki/SOCKS "SOCKS")、[PAP](https://zh.wikipedia.org/w/index.php?title=%E5%AF%86%E7%A2%BC%E9%A9%97%E8%AD%89%E5%8D%94%E8%AD%B0&action=edit&redlink=1 "密码验证协议（页面不存在）")
+4. **传输层**(transport layer)
+例如[TCP](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE "传输控制协议")、[UDP](https://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE "用户数据报协议")、[RTP](https://zh.wikipedia.org/wiki/%E5%AE%9E%E6%97%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "实时传输协议")、[SCTP](https://zh.wikipedia.org/wiki/%E6%B5%81%E6%8E%A7%E5%88%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "流控制传输协议")、[SPX](https://zh.wikipedia.org/wiki/%E5%BA%8F%E5%88%97%E5%88%86%E7%B5%84%E4%BA%A4%E6%8F%9B "串行分组交换")、[ATP](https://zh.wikipedia.org/wiki/AppleTalk "AppleTalk")
+3. **网络层**(network layer)
+例如[IP](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE "网际协议")、[ICMP](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE "互联网控制消息协议")、[IPX](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E5%8D%8F%E8%AE%AE "互联网分组交换协议")、[BGP](https://zh.wikipedia.org/wiki/%E8%BE%B9%E7%95%8C%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AE "边界网关协议")、[OSPF](https://zh.wikipedia.org/wiki/OSPF "OSPF")、[RIP](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E4%BF%A1%E6%81%AF%E5%8D%8F%E8%AE%AE "路由信息协议")、[IGRP](https://zh.wikipedia.org/wiki/IGRP "IGRP")、[EIGRP](https://zh.wikipedia.org/wiki/EIGRP "EIGRP")、[ARP](https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE "地址解析协议")、[RARP](https://zh.wikipedia.org/wiki/RARP "RARP")、[X.25](https://zh.wikipedia.org/wiki/X.25 "X.25")
+2. **数据链路层**(data link layer)
+例如[以太网](https://zh.wikipedia.org/wiki/%E4%BB%A5%E5%A4%AA%E7%BD%91 "以太网")、[令牌环](https://zh.wikipedia.org/wiki/%E4%BB%A4%E7%89%8C%E7%8E%AF "令牌环")、[HDLC](https://zh.wikipedia.org/wiki/HDLC "HDLC")、[帧中继](https://zh.wikipedia.org/wiki/%E5%B8%A7%E4%B8%AD%E7%BB%A7 "帧中继")、[ISDN](https://zh.wikipedia.org/wiki/ISDN "ISDN")、[ATM](https://zh.wikipedia.org/wiki/%E5%BC%82%E6%AD%A5%E4%BC%A0%E8%BE%93%E6%A8%A1%E5%BC%8F "异步传输模式")、[IEEE 802.11](https://zh.wikipedia.org/wiki/IEEE_802.11 "IEEE 802.11")、[FDDI](https://zh.wikipedia.org/wiki/FDDI "FDDI")、[PPP](https://zh.wikipedia.org/wiki/%E7%82%B9%E5%AF%B9%E7%82%B9%E5%8D%8F%E8%AE%AE "点对点协议")
+1. **物理层**(physical layer)
+例如[调制解调器](https://zh.wikipedia.org/wiki/%E6%95%B8%E6%93%9A%E6%A9%9F "调制解调器")、[无线电](https://zh.wikipedia.org/wiki/%E6%97%A0%E7%BA%BF%E7%94%B5 "无线电")、[光纤](https://zh.wikipedia.org/wiki/%E5%85%89%E7%BA%A4 "光纤")
+
+通常人们认为OSI模型的最上面三层（应用层、表示层和会话层）在TCP/IP组中是一个应用层。由于TCP/IP有一个相对较弱的会话层，由TCP和RTP下的打开和关闭连接组成，并且在TCP和UDP下的各种应用提供不同的端口号，这些功能能够由单个的应用程序（或者那些应用程序所使用的库）增加。与此相似的是，IP是按照将它下面的网络当作一个黑盒子的思想设计的，这样在讨论TCP/IP的时候就可以把它当作一个独立的层。
+
+4
+
+**应用层**  
+application layer
+
+例如[HTTP](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "超文本传输协议")、[FTP](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "文件传输协议")、[DNS](https://zh.wikipedia.org/wiki/DNS "DNS")  
+_（如[BGP](https://zh.wikipedia.org/wiki/%E8%BE%B9%E7%95%8C%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AE "边界网关协议")和[RIP](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E4%BF%A1%E6%81%AF%E5%8D%8F%E8%AE%AE "路由信息协议")这样的路由协议，尽管由于各种各样的原因它们分别运行在TCP和UDP上，仍然可以将它们看作网络层的一部分）_
+
+3
+
+**传输层**  
+transport layer
+
+例如[TCP](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE "传输控制协议")、[UDP](https://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE "用户数据报协议")、[RTP](https://zh.wikipedia.org/wiki/RTP "RTP")、[SCTP](https://zh.wikipedia.org/wiki/SCTP "SCTP")  
+_（如[OSPF](https://zh.wikipedia.org/wiki/OSPF "OSPF")这样的路由协议，尽管运行在IP上也可以看作是网络层的一部分）_
+
+2
+
+**网络互连层**  
+internet layer
+
+对于TCP/IP来说这是[因特网协议](https://zh.wikipedia.org/wiki/%E5%9B%A0%E7%89%B9%E7%BD%91%E5%8D%8F%E8%AE%AE "因特网协议")（IP）  
+_（如[ICMP](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE "互联网控制消息协议")和[IGMP](https://zh.wikipedia.org/wiki/%E5%9B%A0%E7%89%B9%E7%BD%91%E7%BB%84%E7%AE%A1%E7%90%86%E5%8D%8F%E8%AE%AE "因特网组管理协议")这样的必须协议尽管运行在IP上，也仍然可以看作是网络互连层的一部分；[ARP](https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE "地址解析协议")不运行在IP上）_
+
+1
+
+**网络访问（链接）层**  
+Network Access (link) layer
+
+例如[以太网](https://zh.wikipedia.org/wiki/%E4%BB%A5%E5%A4%AA%E7%BD%91 "以太网")、[Wi-Fi](https://zh.wikipedia.org/wiki/Wi-Fi "Wi-Fi")、[MPLS](https://zh.wikipedia.org/wiki/%E5%A4%9A%E5%8D%8F%E8%AE%AE%E6%A0%87%E7%AD%BE%E4%BA%A4%E6%8D%A2 "多协议标签交换")等。
 
 [^1]:万维网并不等同互联网，万维网只是互联网所能提供的服务其中之一，是靠着互联网运行的一项服务。
 ***
