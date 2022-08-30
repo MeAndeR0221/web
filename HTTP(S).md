@@ -46,14 +46,24 @@ HTTP/1.1协议中预留给能够将连接改为隧道方式的代理服务器。
 
 另外，还有一种[安全超文本传输协议](https://zh.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "安全超文本传输协议")（S-HTTP）的HTTP安全传输实现，但是HTTPS的广泛应用而成为事实上的HTTP安全传输实现，S-HTTP并没有得到广泛支持。
 
-HTTPS的主要作用是在不安全的网络上创建一个安全信道，并可在使用适当的加密包和服务器证书可被验证且可被信任时，对[窃听](https://zh.wikipedia.org/wiki/%E7%AB%8A%E8%81%BD "窃听")和[中间人攻击](https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB "中间人攻击")提供合理的防护。
+HTTP不是安全的，而且攻击者可以通过[监听](https://zh.wikipedia.org/wiki/%E7%9B%A3%E8%81%BD "监听")和[中间人攻击](https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB "中间人攻击")等手段，获取网站帐户和敏感信息等。HTTPS的主要作用是在不安全的网络上创建一个安全信道，并可在使用适当的加密包和服务器证书可被验证且可被信任时，对[窃听](https://zh.wikipedia.org/wiki/%E7%AB%8A%E8%81%BD "窃听")和[中间人攻击](https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB "中间人攻击")提供合理的防护。
+
+HTTP协议和安全协议同属于应用层（[OSI模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B "OSI模型")的最高层），具体来讲，安全协议工作在HTTP之下，传输层之上：安全协议向运行HTTP的进程提供一个类似于TCP的套接字，供进程向其中注入报文，安全协议将报文加密并注入运输层套接字；或是从运输层获取加密报文，解密后交给对应的进程。严格地讲，HTTPS并不是一个单独的协议，而是对工作在一加密连接（[TLS](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8 "传输层安全")或SSL）上的常规HTTP协议的称呼。HTTPS报文中的任何东西都被加密，包括所有报头和荷载。除了可能的[选择密文攻击](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E5%AF%86%E6%96%87%E6%94%BB%E5%87%BB "选择密文攻击")之外，一个攻击者所能知道的只有在两者之间有一连接这一事实。
 
 HTTPS的信任基于预先安装在[操作系统](https://zh.wikipedia.org/wiki/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F "操作系统")中的[证书颁发机构](https://zh.wikipedia.org/wiki/%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84 "证书颁发机构")（CA）。因此，与一个网站之间的HTTPS连线仅在这些情况下可被信任：
-
 -   浏览器正确地实现了HTTPS且操作系统中安装了正确且受信任的证书颁发机构；
 -   证书颁发机构仅信任合法的网站；
 -   被访问的网站提供了一个有效的证书，也就是说它是一个由操作系统信任的证书颁发机构签发的（大部分浏览器会对无效的证书发出警告）；
 -   该证书正确地验证了被访问的网站（例如，访问`https://example.com`时收到了签发给`example.com`而不是其它[域名](https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D "域名")的证书）；
 -   此协议的加密层（[SSL/TLS](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8 "传输层安全")）能够有效地提供认证和高强度的加密。
+<!-- 不应将HTTPS和在[RFC 2660](https://tools.ietf.org/html/rfc2660)中定义的[安全超文本传输协议](https://zh.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "安全超文本传输协议")（S-HTTP）相混淆。-->
 
-不应将HTTPS和在[RFC 2660](https://tools.ietf.org/html/rfc2660)中定义的[安全超文本传输协议](https://zh.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "安全超文本传输协议")（S-HTTP）相混淆。
+[HTTP](https://zh.wikipedia.org/wiki/HTTP "HTTP")的[URL](https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E7%AC%A6 "统一资源定位符")是由“`http://`”起始与默认使用[端口](https://zh.wikipedia.org/wiki/TCP/UDP%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8 "TCP/UDP端口列表")80，而HTTPS的URL则是由“`https://`”起始与默认使用[端口](https://zh.wikipedia.org/wiki/TCP/UDP%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8 "TCP/UDP端口列表")443。
+
+要使一网络服务器准备好接受HTTPS连接，管理员必须创建一[数字证书](https://zh.wikipedia.org/wiki/%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6 "数字证书")，并交由[证书颁发机构](https://zh.wikipedia.org/wiki/%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84 "证书颁发机构")签名以使浏览器接受。证书颁发机构会验证数字证书持有人和其声明的为同一人。浏览器通常都预装了证书颁发机构的证书，所以他们可以验证该签名。
+
+由证书颁发机构签发的证书有免费的，也有每年收费数美元到数千美元不等的。一个组织也可能有自己的证书颁发机构，尤其是当设置浏览器来访问他们自己的网站时（如，运行在公司或学校[局域网](https://zh.wikipedia.org/wiki/%E5%B1%80%E5%9F%9F%E7%BD%91 "局域网")内的网站）。他们可以容易地将自己的证书加入浏览器中。
+
+证书可在其过期前被吊销，通常情况是该证书的私钥已经失密。较新的浏览器如[Google Chrome](https://zh.wikipedia.org/wiki/Google_Chrome "Google Chrome")、[Firefox](https://zh.wikipedia.org/wiki/Firefox "Firefox")、[Opera](https://zh.wikipedia.org/wiki/Opera "Opera")都实现了[在线证书状态协议](https://zh.wikipedia.org/wiki/%E5%9C%A8%E7%BA%BF%E8%AF%81%E4%B9%A6%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE "在线证书状态协议")（OCSP）以排除这种情形：浏览器将网站提供的证书的序列号通过OCSP发送给证书颁发机构，后者会告诉浏览器证书是否还是有效的。
+
+
