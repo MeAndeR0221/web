@@ -1,4 +1,7 @@
-__`TCP/IP`__
+# __`TCP/IP`__
+
+^7b5a65
+
 **[互联网](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91)协议套件**（英语：Internet Protocol Suite，缩写IPS）是网络通信模型，以及整个[网络传输协议(Communications Protocol)](https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "网络传输协议")家族，为[网际网络](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E7%BD%91%E7%BB%9C "网际网络")的基础通信架构。它常通称为**TCP/IP协议族**（英语：TCP/IP Protocol Suite，或TCP/IP Protocols），简称TCP/IP。因为该协议家族的两个核心协议：TCP（[传输控制协议](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE "传输控制协议")）和IP（[网际协议](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE "网际协议")），为该家族中最早通过的标准。由于在网络通讯协议普遍采用分层的结构，当多个层次的协议共同工作时，类似计算机科学中的[堆栈](https://zh.wikipedia.org/wiki/%E5%A0%86%E6%A0%88 "堆栈")，因此又称为**TCP/IP协议栈（英语：TCP/IP Protocol Stack）**。
 -   一个简单的路由器上可能会实现[ARP](https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE "地址解析协议")，[IP](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE "网际协议")，[ICMP](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE "互联网控制消息协议")，[UDP](https://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE "用户数据报协议")，[SNMP](https://zh.wikipedia.org/wiki/%E7%AE%80%E5%8D%95%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E5%8D%8F%E8%AE%AE "简单网络管理协议")，[RIP](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E4%BF%A1%E6%81%AF%E5%8D%8F%E8%AE%AE "路由信息协议")。
 -   [WWW](https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91 "万维网")[^1]用户端使用[ARP](https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE "地址解析协议")，[IP](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE "网际协议")，[ICMP](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE "互联网控制消息协议")，[UDP](https://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE "用户数据报协议")，[TCP](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE "传输控制协议")，[DNS](https://zh.wikipedia.org/wiki/DNS "DNS")，[HTTP](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "超文本传输协议")，[FTP](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "文件传输协议")。
@@ -8,7 +11,7 @@ TCP/IP提供了点对点链接的机制，将资料应该如何封装、寻址�
 
 [^1]:万维网并不等同互联网，万维网只是互联网所能提供的服务其中之一，是靠着互联网运行的一项服务。
 ***
-__`TCP（Transmission Control Protocol）`__
+# __`TCP（Transmission Control Protocol）`__
 传输控制协议（TCP，Transmission Control Protocol）是一种面向连接的、可靠的、基于字节流的端到端传输层通信协议，由IETF的RFC 793定义。
 TCP旨在适应支持多网络应用的分层协议层次结构。互联网络与单个网络有很大的不同，因为互联网络的不同部分可能有截然不同的拓扑结构、带宽、延迟、数据包大小和其他参数。TCP的设计目标是能够动态地适应互联网络的这些特性，而且具备面对各种故障时的健壮性。
 开放系统互联（Open System Interconnection）：
@@ -76,3 +79,37 @@ tcp的首部中，有个窗口字段，窗口字段告诉发送方，接收方�
 如何防止拥塞，其实用的是一种探测的思想，因为没有任何直接的可量化的参数能表明当前的网络拥塞程序，所以只好不停的探测，让网络处于一个较为高效的状态。
 通常使用的方法叫慢开始。它的思路是这样的，当主机开始发送数据的时候，由小到大逐渐增大发送窗口，通常是在刚开始发送的时候，先把拥塞窗口设置为一个最大报文段MSS的数值，而在每收到一个对新的报文段的确认后，把拥塞窗口增加到多一个MSS的数据。用这样的方法逐步增大，可以让分组注入网络的速率更加合理。
 拥塞窗口是发送端维持的一个状态变量，发送方让自己的发送窗口等于拥塞窗口。
+
+## __`三次握手（Three-way handshake）`__
+通信双方的三次TCP(Transmission Control Protocol)报文段[^2]的交换过程，也就是通常所说的TCP连接建立实现的三次握手(Three-Way Handshake)过程。所谓的“三次握手”，是为了对每次发送的数据量进行跟踪与协商，确保数据段的发送和接收同步，根据所接收到的数据量而确认数据发送、接收完毕后何时撤消联系，并建立虚连接。
+![[Pasted image 20220824224939.png]]
+为了建立连接TCP连接，通信双方必须从对方了解如下信息：对方报文发送的开始序号、对方发送数据的缓冲区大小、能被接收的最大报文段长度MSS（Maximum Segment Size）、被支持的TCP选项。
+当连接建立完成之后，则：
+1. TCP连接的通信双方均可知道连接上对方将被发送的第一个字节的序列号（发给对方的确认号，A发给B的确认号就是B将发送的序列号，同样B也是）；
+2. 双方均可知道连接上能发送的MSS，从而即可选取握手阶段双方交换的SYN报文和SYN+ACK报文中MSS选项中较小的值作为实际值；
+3. 双方均可知道对方的接收缓冲区大小；
+4. 双方均可知道对方能否使用SACK、窗口缩放等选项。
+基于这些信息，双方即可建立一个TCP连接(x，y)并基于该连接开始报文段的传输。
+
+1. 第一次握手：建立连接时，[客户端](https://baike.baidu.com/item/%E5%AE%A2%E6%88%B7%E7%AB%AF)发送[syn](https://baike.baidu.com/item/syn)包（seq=j）到[服务器](https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E5%99%A8)，并进入[SYN_SENT](https://baike.baidu.com/item/SYN_SENT)状态，等待服务器确认；SYN：同步序列编号（Synchronize Sequence Numbers）。
+2. 第二次握手：服务器收到syn包，必须确认客户端的SYN（[ack](https://baike.baidu.com/item/ack)=j+1），同时自己也发送一个SYN包（seq=k），即SYN+ACK)包，此时服务器进入[SYN_RECV](https://baike.baidu.com/item/SYN_RECV)状态。
+3. 第三次握手：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ack=k+1)，此包发送完毕，客户端和服务器进入[ESTABLISHED](https://baike.baidu.com/item/ESTABLISHED)（TCP连接成功）状态，完成三次握手。
+
+## __`四次挥手`__
+对于一个已经建立的连接，TCP使用改进的四次挥手来释放连接（使用一个带有FIN附加标记的报文段）。TCP关闭连接的步骤如下：
+1. 第一步，当主机A的应用程序通知TCP数据已经发送完毕时，TCP向主机B发送一个带有FIN附加标记的报文段（FIN表示英文finish）；
+2. 第二步，主机B收到这个FIN报文段之后，并不立即用FIN报文段回复主机A，而是先向主机A发送一个确认序号ACK，同时通知自己相应的应用程序：对方要求关闭连接（先发送ACK的目的是为了防止在这段时间内，对方重传FIN报文段）；
+3. 第三步，主机B的应用程序告诉TCP：我要彻底的关闭连接，TCP向主机A送一个FIN报文段；
+4. 第四步，主机A收到这个FIN报文段后，向主机B发送一个ACK表示连接彻底释放。
+
+[^2]:TCP提供的是一种面向连接的，可靠的字节流服务，TCP提供可靠性的一种重要的方式就是MSS。通过MSS，应用数据被分割成TCP认为最适合发送的数据块，由TCP传递给IP的信息单位称为报文段或段(segment)。代表一个TCP socket的结构体struct tcp_sock中有多个成员用于确定应用数据被分割成最大为多大的数据块较为合适(最大报文段长度MSS)。
+
+# __`用户数据报协议（UDP，User Datagram Protocol）`__
+Internet 协议集[^3]支持一个**无连接**的[传输协议](https://baike.baidu.com/item/%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE/8048821)，提供面向事务的简单不可靠信息传送服务，该协议称为用户数据报协议。UDP为应用程序提供了一种无需建立连接就可以发送封装的IP数据包的方法。RFC 768描述了UDP。
+
+Internet 的传输层有两个主要协议，互为补充。无连接的是 UDP，它除了给应用程序发送数据包功能并允许它们在所需的层次上架构自己的协议之外，几乎没有做什么特别的事情。面向连接的是[[#^7b5a65|TCP]]，该协议几乎做了所有的事情。
+
+UDP协议与[[#^7b5a65|TCP]]协议一样用于处理数据包，在[OSI](https://baike.baidu.com/item/OSI)模型中，两者都位于[传输层](https://baike.baidu.com/item/%E4%BC%A0%E8%BE%93%E5%B1%82/4329536)，处于IP协议的上一层。UDP有不提供数据包分组、组装和不能对数据包进行排序的缺点，也就是说，当报文发送之后，是无法得知其是否安全完整到达的。传输数据之前源端和终端不建立连接， 当它想传送时就简单地去抓取来自应用程序的数据，并尽可能快地把它扔到网络上。 在发送端，UDP传送数据的速度仅仅是受应用程序生成数据的速度、 计算机的能力和传输带宽影响；在接收端，UDP把每个消息段放在队列中，应用程序每次从队列中读一个消息段。
+UDP用来支持那些需要在计算机之间传输数据的网络应用。包括[网络视频会议](https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E8%A7%86%E9%A2%91%E4%BC%9A%E8%AE%AE)系统在内的众多的客户/服务器模式的网络应用都需要使用UDP协议。
+
+[^3]:Internet协议（Internet Protocol）是一个协议簇的总称，其本身并不是任何协议。一般有[文件传输协议](https://baike.baidu.com/item/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE/1874113)、[电子邮件协议](https://baike.baidu.com/item/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E5%8D%8F%E8%AE%AE/4105152)、[超文本传输协议](https://baike.baidu.com/item/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE/8535513)、通信协议、远程登录（Telnet）、网络管理（SNMP简单网络管理协议）、域名系统（DNS）等。
