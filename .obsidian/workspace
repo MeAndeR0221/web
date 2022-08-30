@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TCP.md",
-            "mode": "source",
+            "file": "UDP.md",
+            "mode": "preview",
             "backlinks": true,
             "source": false
           }
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 105
+    "width": 101
   },
   "right": {
     "id": "722aa05b13522dc0",
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TCP.md",
+                "file": "UDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TCP.md"
+                "file": "UDP.md"
               }
             }
           },
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TCP.md",
+                "file": "UDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,13 +143,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 170.09091186523438
+    "width": 168.09091186523438
   },
   "active": "a10a3566ea482477",
   "lastOpenFiles": [
+    "TCP.md",
     "UDP.md",
     "^OSI.md",
-    "TCP.md",
     "URL&URI.md",
     "图一楽.md",
     "Server.md",
