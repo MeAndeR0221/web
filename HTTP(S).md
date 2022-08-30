@@ -1,0 +1,3 @@
+__`HTTP`__
+**超文本传输协议**（英语：**H**yper**T**ext **T**ransfer **P**rotocol）是一种用于分布式、协作式和[超媒体](https://zh.wikipedia.org/wiki/%E8%B6%85%E5%AA%92%E9%AB%94 "超媒体")信息系统的应用层协议。HTTP是[万维网](https://zh.wikipedia.org/wiki/%E5%85%A8%E7%90%83%E8%B3%87%E8%A8%8A%E7%B6%B2 "万维网")的数据通信的基础。
+设计HTTP最初的目的是为了提供一种发布和接收[HTML](https://zh.wikipedia.org/wiki/HTML "HTML")页面的方法。通过HTTP或者[HTTPS](https://zh.wikipedia.org/wiki/HTTPS "HTTPS")协议请求的资源由[统一资源标识符](https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6 "统一资源标志符")（Uniform Resource Identifiers，URI）来标识。
