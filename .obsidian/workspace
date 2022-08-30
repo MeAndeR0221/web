@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "3883a0867d23ed69",
+        "id": "a10a3566ea482477",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -145,17 +145,17 @@
     "direction": "horizontal",
     "width": 170.09091186523438
   },
-  "active": "3883a0867d23ed69",
+  "active": "a10a3566ea482477",
   "lastOpenFiles": [
     "UDP.md",
-    "URL&URI.md",
+    "^OSI.md",
     "TCP.md",
+    "URL&URI.md",
     "图一楽.md",
     "Server.md",
     "IP Address.md",
     "前端&后端&架构.md",
     "Broswer.md",
-    "Client.md",
-    "Domain Name.md"
+    "Client.md"
   ]
 }

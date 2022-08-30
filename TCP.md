@@ -1,13 +1,14 @@
 __`TCP/IP`__
-**互联网协议套件**（英语：Internet Protocol Suite，缩写IPS）是网络通信模型，以及整个[网络传输协议](https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "网络传输协议")家族，为[网际网络](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E7%BD%91%E7%BB%9C "网际网络")的基础通信架构。它常通称为**TCP/IP协议族**（英语：TCP/IP Protocol Suite，或TCP/IP Protocols），简称TCP/IP。因为该协议家族的两个核心协议：TCP（[传输控制协议](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE "传输控制协议")）和IP（[网际协议](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE "网际协议")），为该家族中最早通过的标准。由于在网络通讯协议普遍采用分层的结构，当多个层次的协议共同工作时，类似计算机科学中的[堆栈](https://zh.wikipedia.org/wiki/%E5%A0%86%E6%A0%88 "堆栈")，因此又称为**TCP/IP协议栈（英语：TCP/IP Protocol Stack）**。
-TCP/IP提供了点对点链接的机制，将资料应该如何封装、寻址、传输、路由以及在目的地如何接收，都加以标准化。它将软件通信过程[抽象化](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%8C%96_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8) "抽象化 (计算机科学)")为四个[抽象层](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%B1%A4 "抽象层")，采取[协议堆栈](https://zh.wikipedia.org/w/index.php?title=%E5%8D%94%E5%AE%9A%E5%A0%86%E7%96%8A&action=edit&redlink=1 "协议堆栈（页面不存在）")的方式，分别实现出不同通信协议。协议族下的各种协议，依其功能不同，分别归属到这四个层次结构之中，常视为是简化的七层[OSI模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B "OSI模型")。
+**互联网协议套件**（英语：Internet Protocol Suite，缩写IPS）是网络通信模型，以及整个[网络传输协议(Communications Protocol)](https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE "网络传输协议")家族，为[网际网络](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E7%BD%91%E7%BB%9C "网际网络")的基础通信架构。它常通称为**TCP/IP协议族**（英语：TCP/IP Protocol Suite，或TCP/IP Protocols），简称TCP/IP。因为该协议家族的两个核心协议：TCP（[传输控制协议](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE "传输控制协议")）和IP（[网际协议](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE "网际协议")），为该家族中最早通过的标准。由于在网络通讯协议普遍采用分层的结构，当多个层次的协议共同工作时，类似计算机科学中的[堆栈](https://zh.wikipedia.org/wiki/%E5%A0%86%E6%A0%88 "堆栈")，因此又称为**TCP/IP协议栈（英语：TCP/IP Protocol Stack）**。
+
+TCP/IP提供了点对点链接的机制，将资料应该如何封装、寻址、传输、路由以及在目的地如何接收，都加以标准化。它将软件通信过程[抽象化](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%8C%96_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8) "抽象化 (计算机科学)")为四个[抽象层](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%B1%A4 "抽象层")，采取[协议堆栈](https://zh.wikipedia.org/w/index.php?title=%E5%8D%94%E5%AE%9A%E5%A0%86%E7%96%8A&action=edit&redlink=1 "协议堆栈（页面不存在）")的方式，分别实现出不同通信协议。协议族下的各种协议，依其功能不同，分别归属到这四个层次结构之中，常视为是简化的七层[OSI模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B "OSI模型")。 ^599153
 ***
 __`TCP（Transmission Control Protocol）`__
 传输控制协议（TCP，Transmission Control Protocol）是一种面向连接的、可靠的、基于字节流的端到端传输层通信协议，由IETF的RFC 793定义。
 TCP旨在适应支持多网络应用的分层协议层次结构。互联网络与单个网络有很大的不同，因为互联网络的不同部分可能有截然不同的拓扑结构、带宽、延迟、数据包大小和其他参数。TCP的设计目标是能够动态地适应互联网络的这些特性，而且具备面对各种故障时的健壮性。
 开放系统互联（Open System Interconnection）：
 ![[Pasted image 20220827225111.png]]
-TCP工作在网络OSI[]的七层模型中的第四层——传输层，IP在第三层——网络层，ARP 在第二层——数据链路层；同时，我们需要简单的知道，数据从应用层发下来，会在每一层都会加上头部信息，进行封装，然后再发送到数据接收端。这个基本的流程你需要知道，就是每个数据都会经过数据的封装和解封装的过程。
+TCP工作在网络[[#^599153|OSI]]的七层模型中的第四层——传输层，IP在第三层——网络层，ARP 在第二层——数据链路层；同时，我们需要简单的知道，数据从应用层发下来，会在每一层都会加上头部信息，进行封装，然后再发送到数据接收端。这个基本的流程你需要知道，就是每个数据都会经过数据的封装和解封装的过程。
 ![[Pasted image 20220827230424.png]]
 tcp协议比较复杂，因为它要实现可靠传输，为了确保它的可靠传输，于是协议就相当复杂了。它的主要特点是：
 -   面向连接，就像打电话一样，必须一对一的接通电话，两个人才能讲电话，而udp有点像发微信，不需要对方做准备，我想发就发
