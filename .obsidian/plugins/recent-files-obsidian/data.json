@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "HTML基础",
+      "path": "HTML基础.md"
+    },
+    {
+      "basename": "URL&URI",
+      "path": "URL&URI.md"
+    },
+    {
       "basename": "HTTP(S)",
       "path": "HTTP(S).md"
     },
@@ -13,10 +21,6 @@
       "path": "TCP_IP.md"
     },
     {
-      "basename": "URL&URI",
-      "path": "URL&URI.md"
-    },
-    {
       "basename": "Server",
       "path": "Server.md"
     },
@@ -27,10 +31,6 @@
     {
       "basename": "IP Address",
       "path": "IP Address.md"
-    },
-    {
-      "basename": "HTML基础",
-      "path": "HTML基础.md"
     },
     {
       "basename": "Client",

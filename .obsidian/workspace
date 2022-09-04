@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "HTTP(S).md",
+            "file": "HTML基础.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTTP(S).md",
+                "file": "HTML基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTTP(S).md"
+                "file": "HTML基础.md"
               }
             }
           },
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTTP(S).md",
+                "file": "HTML基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,15 +147,15 @@
   },
   "active": "0cdadf075f42ae3b",
   "lastOpenFiles": [
+    "URL&URI.md",
+    "HTTP(S).md",
     "Domain Name.md",
     "TCP_IP.md",
     "UDP.md",
-    "URL&URI.md",
     "Server.md",
     "README.md",
     "IP Address.md",
     "HTML基础.md",
-    "Client.md",
-    "Broswer.md"
+    "Client.md"
   ]
 }
